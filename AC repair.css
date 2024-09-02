@@ -1,0 +1,82 @@
+#acServiceNav {
+    background-color: var(--secondary-color);
+}
+
+.Services {
+    padding: 50px 60px;
+    margin-left: auto; /* Adjusted to 'margin-left' to 'margin-left: auto;' for valid property */
+}
+
+.subservice {
+    color: darkred;
+}
+
+.sub1 {
+    font-size: medium;
+}
+
+.image {
+    overflow: hidden;
+    font-size: 0;
+    width: fit-content;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.image img {
+    border-radius: 5px;
+    width: 500px; /* Adjusted to ensure the image scales within its container */
+    height: 300px;
+    transition: transform 0.4s ease;
+    transform-origin: center; /* Scale image from the center */
+}
+
+.image img:hover {
+    transform: scale(1.2); /* Scale up the image */
+}
+
+.Services .sub3 {
+    font-size: large;
+}
+
+/* Media queries */
+@media screen and (max-width: 450px) {
+    .Services {
+        padding: 1rem;
+        font-size: 1.7rem;
+    }
+    
+    .Services h1 {
+        font-size: 1.7rem;
+    }
+    
+    .Services > :first-child {
+        margin-bottom: 1rem;
+    }
+    
+    .Services h2 {
+        font-size: 1.4rem;
+    }
+    
+    .sub1 {
+        font-size: 1rem;
+        text-align: justify;
+    }
+    
+    .Services .sub3 {
+        font-size: 1rem;
+        text-align: justify;
+    }
+    
+    .image img {
+        height: auto; /* Maintain aspect ratio for smaller screens */
+        width: 100%;
+        transform: none; /* Reset transform on mobile view */
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .image img:hover {
+        transform: none; /* Reset transform on mobile view */
+    }
+}
